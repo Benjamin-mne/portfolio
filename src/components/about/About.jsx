@@ -18,7 +18,7 @@ export const About = () => {
           <img src={Me} alt="about-img" className='hobbyes about__me-image'/>
           <div className='about__me-img-icon' >
               {current === 'studies' && <ImBooks className='about__icon' style={{fontSize:'10rem'}}/>}
-              {current === 'hobbyes' && <MdPiano className='about__icon' style={{fontSize:'10rem'}}/>}
+              {current === 'hobbies' && <MdPiano className='about__icon' style={{fontSize:'10rem'}}/>}
               {current === 'goals' && <GiStairsGoal className='about__icon' style={{fontSize:'10rem'}}/>}
           </div>
         </div>
