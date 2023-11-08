@@ -28,12 +28,17 @@ header{
 }
 
 .scroll__down{
+    display: flex;
     position: absolute;
     right: -2.3rem;
     bottom: 5rem;
     transform: rotate(90deg);
     font-weight: 200;
     font-size: 0.9rem;
+}
+
+.scroll__down:hover{
+    text-decoration: none;
 }
 
 .cta a{

@@ -9,12 +9,12 @@ export const ServiceArticle = ({h3, aP}) => {
     </div>
     <ul className="service__list">
         {
-          aP?.map(p => {
+          aP?.map((p, idx) => {
             if (p === 'Desktop Version'){
-              return <li><BiCheck className='service__list-icon'/> <p>{p} <small><a href='https://www.electronjs.org/docs/latest' target='_blank'>(ElectronJS)</a></small></p></li>
+              return <li key={idx}><BiCheck className='service__list-icon'/> <p>{p} <small><a href='https://www.electronjs.org/docs/latest' target='_blank'>(ElectronJS)</a></small></p></li>
             }
             else {
-              return <li><BiCheck className='service__list-icon'/><p>{p}</p></li>
+              return <li key={idx}><BiCheck className='service__list-icon'/><p>{p}</p></li>
             }
           })
         }

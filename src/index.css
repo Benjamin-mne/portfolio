@@ -12,8 +12,8 @@
 :root{
     --color-bg: #000;
     --color-bg-variant: #131312;
-    --color-primary: #ffce00;
-    --color-primary-varient: rgba(255, 206, 0, 0.4);
+    --color-primary: rgb(255, 200, 61);
+    --color-primary-varient: rgba(255, 200, 61, 0.5);
     --color-white: #fff;
     --color-light: rgb(255, 255, 255, 0.6);
 
@@ -26,6 +26,7 @@
 
 html{
     scroll-behavior: smooth;
+
 }
 
 ::-webkit-scrollbar{
@@ -89,21 +90,22 @@ a:hover{
 .btn{
     width: max-content;
     display: inline-block;
-    color: var(--color-primary);
+    color: var(--color-white);
     padding: 0.75rem 1.2rem;
-    border-radius: 0.4rem;
     cursor: pointer;
-    border: 1px solid var(--color-primary);
+    outline: .5px solid var(--color-white);
     transition: var(--transition);
+    border-radius: 5px;
 }
 
 .btn:hover{
     background: var(--color-white);
     color: var(--color-bg);
-    border: transparent;
+    outline: var(--color-white);
 }
 
 .btn-primary{
+    outline: .5px solid var(--color-primary);
     background: var(--color-primary);
     color: var(--color-bg);
 }
